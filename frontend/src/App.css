@@ -1,0 +1,35 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.skew-button {
+  transform: skewX(-10deg);
+  transition: all 0.3s ease;
+}
+
+.skew-button:hover {
+  transform: skewX(-10deg) translateY(-2px);
+}
+
+.skew-button span {
+  transform: skewX(10deg);
+  display: block;
+}
+
+.stat-card {
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.workout-entry {
+  transition: all 0.2s ease;
+}
+
+.workout-entry:hover {
+  background: rgba(255, 255, 255, 0.02);
+}

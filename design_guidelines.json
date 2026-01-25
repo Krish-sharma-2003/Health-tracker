@@ -1,0 +1,143 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "The Anti-AI Designer",
+    "mission": "Create a premium, dark-mode fitness application that feels like a high-performance cockpit, not a generic SaaS dashboard."
+  },
+  "theme_strategy": {
+    "mode": "dark",
+    "archetype": "The Performance Pro (Neon Obsidian)",
+    "core_concept": "Tactical Minimalism. The interface should feel like elite sports equipment—matte black, precision-engineered, with high-visibility neon accents for critical data."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Barlow Condensed, sans-serif",
+      "weights": ["700", "900"],
+      "tracking": "tracking-tighter",
+      "usage": "All section headers, hero titles, and metric values."
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "tracking": "tracking-normal",
+      "usage": "Paragraphs, labels, and UI controls."
+    },
+    "installation": "Import from Google Fonts: https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Manrope:wght@400;500;700&display=swap"
+  },
+  "colors": {
+    "background": {
+      "default": "#050505",
+      "paper": "#0A0A0A",
+      "subtle": "#121212"
+    },
+    "primary": {
+      "name": "Volt Lime",
+      "hex": "#CCFF00",
+      "usage": "Primary CTAs, active states, progress bars (high performance)."
+    },
+    "secondary": {
+      "name": "Electric Purple",
+      "hex": "#7000FF",
+      "usage": "Recovery metrics, spiritual/mental wellness indicators."
+    },
+    "accent": {
+      "name": "Cyan Data",
+      "hex": "#00F0FF",
+      "usage": "Charts, graphs, and information highlights."
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#9CA3AF",
+      "muted": "#525252"
+    },
+    "status": {
+      "success": "#CCFF00",
+      "error": "#FF3B30",
+      "warning": "#FFD60A"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "style": "bg-black/40 backdrop-blur-xl border border-white/10",
+      "usage": "Cards, sticky headers, floating panels."
+    },
+    "borders": {
+      "default": "border-white/10",
+      "active": "border-[#CCFF00]/50",
+      "glow": "shadow-[0_0_20px_rgba(204,255,0,0.15)]"
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-b from-transparent via-black/50 to-[#050505]",
+      "neon_glow": "bg-gradient-to-r from-[#CCFF00] to-[#00F0FF]"
+    }
+  },
+  "layout_system": {
+    "landing_page": {
+      "grid_type": "Tetris Grid (Mode A)",
+      "columns": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-8",
+      "rules": "Asymmetry is mandatory. Never center the hero text. Use negative space aggressively."
+    },
+    "dashboard": {
+      "grid_type": "Bento Grid (Mode B)",
+      "columns": "grid-cols-1 md:grid-cols-4",
+      "gap": "gap-4",
+      "rules": "High density. Every pixel must be utilized. Use 'h-full' on children to ensure alignment."
+    },
+    "spacing": {
+      "scale": ["p-4", "p-6", "p-8", "p-12", "p-20"],
+      "rule": "Containers with borders must have internal padding (p-6 or p-8) to prevent text collision."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#CCFF00] text-black font-bold uppercase tracking-wider hover:bg-[#b3e600] rounded-none skew-x-[-10deg]",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/10 rounded-none skew-x-[-10deg]",
+      "ghost": "text-white/70 hover:text-[#CCFF00] hover:bg-transparent"
+    },
+    "cards": {
+      "dashboard": "bg-[#0A0A0A] border border-white/5 rounded-xl p-6 hover:border-white/10 transition-colors",
+      "glass": "bg-black/40 backdrop-blur-md border border-white/10 rounded-xl"
+    },
+    "charts": {
+      "library": "Recharts",
+      "style": "Minimalist. Remove grid lines. Use custom tooltips with glassmorphism."
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1700784795176-7ff886439d79?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxhdGhsZXRlJTIwbmVvbiUyMGRhcmslMjBneW18ZW58MHx8fHwxNzY5MjY0NTc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark, moody gym setting with focus and negative space."
+      },
+      {
+        "category": "nutrition_hero",
+        "url": "https://images.unsplash.com/photo-1634310486412-dd19449dfcb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwxfHxoZWFsdGh5JTIwZm9vZCUyMGRhcmslMjBib3dsfGVufDB8fHx8MTc2OTI2NDU3N3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Premium dark food photography."
+      },
+      {
+        "category": "user_profile",
+        "url": "https://images.unsplash.com/photo-1750698545009-679820502908?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHw0fHxmaXRuZXNzJTIwdHJhaW5lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTI2NDU4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Professional trainer portrait."
+      },
+      {
+        "category": "abstract_texture",
+        "url": "https://images.unsplash.com/photo-1762281429312-77566d0ad182?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMG5lb24lMjB3YXZlJTIwZGFya3xlbnwwfHx8fDE3NjkyNjQ1ODF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Green neon abstract waves for backgrounds."
+      }
+    ],
+    "icons": "Lucide React (default). Use thin strokes (1.5px) for elegance."
+  },
+  "universal_guidelines": [
+    "DO NOT use gradients for backgrounds. Use solid #050505 or #0A0A0A.",
+    "DO NOT use 'Inter' for headings. Use 'Barlow Condensed'.",
+    "ALWAYS use 'backdrop-blur-xl' for glass elements, not just opacity.",
+    "Ensure all text has sufficient contrast. Use White for headings, Grey-400 for body.",
+    "Use 'sonner' for toasts.",
+    "All interactive elements must have 'data-testid'.",
+    "Mobile-first: Images must not exceed 80vh on mobile.",
+    "Animations: Use 'framer-motion' for entrance effects. Stagger children."
+  ],
+  "instructions_to_main_agent": "You are building a high-performance fitness app. Stick to the 'Neon Obsidian' theme. Use the provided image URLs for the respective sections. Implement the 'Tetris Grid' for the landing page and 'Bento Grid' for the dashboard. Ensure the 'Barlow Condensed' font is loaded and used for all headings."
+}
