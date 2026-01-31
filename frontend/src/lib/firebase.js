@@ -1,16 +1,21 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID
+  apiKey: "AIzaSyBVVIJIUvZ07kK0E8OnjCJDXlIY_TR9_kA",
+  authDomain: "health-tracker-3ac50.firebaseapp.com",
+  projectId: "health-tracker-3ac50",
+  storageBucket: "health-tracker-3ac50.firebasestorage.app",
+  messagingSenderId: "491428519209",
+  appId: "1:491428519209:web:4cd0cd2c6751f08ccc2b38"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
 export default app;
