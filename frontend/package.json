@@ -59,12 +59,13 @@
     "vaul": "^1.1.2",
     "zod": "^3.24.4"
   },
-  "scripts": {
-  "start": "craco start",
+ "scripts": {
+  "start": "react-scripts start",
   "build": "CI=false craco build",
-  "test": "craco test",
+  "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
+
 ,
   "browserslist": {
     "production": [
